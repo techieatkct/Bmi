@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title>BMI Calculator by Ragul</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" type="image/jpg" href="favicon.jpg"/>	
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body oncontextmenu="return false">
+    <div class="container">
+    	<div class="panel">
+    		<h2 class="text-center">Check your BMI</h2>
+    		
+    			<p id="introText" class="text-center">Enter your weight and height below to check your BMI results</p>
+    			
+    			<form>
+    				<div id="heightInput" style="color: magenta;">
+    					<p><b>And your height in here (CM)</b></p>
+	    				 <input id="height" type="number" pattern="[0-9]*" name="b"/> 
+    				</div>    				
+    				<div id="weightInput" style="color: magenta;">
+    					<p><b>Put your weight in here (KG)</b></p>
+    		     		<input id="weight" type="number" pattern="[0-9]*" name="a" />
+    				</div>
+    		     <button type="button" class="btn" onclick="calculate()">Calculate BMI</button>
+    		</form>
+    		<div id="results" class="text-center">Your BMI results will appear here</div>
+    	</div>
+    </div>
+    <div style="text-center; color: darkred;">
+                    <h2 id="demo" onmouseover="" style="cursor:pointer;">Want to Check Again ? Click here</h2>
+    </div>
+	<script src="design.js"></script>
+</body>
+</html>
