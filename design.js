@@ -2,7 +2,7 @@ var weight, height, measure, bmi, error ;
 function calculate() {
 	weight = document.getElementById("weight").value;
 	height = document.getElementById("height").value;
-	error = alert("Please enter values");
+	error = console.log("Please enter values");
 	height /= 100;
 	height *= height;
 	bmi = weight/height;
@@ -25,7 +25,7 @@ function calculate() {
 		document.getElementById("results").innerHTML = measure;
 	}
 	if (weight < 0) {
-		document.getElementById("results").innerHTML = alert("Negative Values not Allowed");
+		document.getElementById("results").innerHTML = console.log("Negative Values not Allowed");
 	}
 }
 document.getElementById("demo").addEventListener("click", myFunction);
